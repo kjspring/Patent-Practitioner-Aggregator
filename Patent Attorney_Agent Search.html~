@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="IBM WebSphere Studio">
+
+<!-- SITE STYLE SHEET START -->
+<link href="Patent%20Attorney_Agent%20Search_files/usptomaster.css" rel="stylesheet" type="text/css">
+<!-- SITE STYLE SHEET END -->
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Patent Attorney/Agent Search </title>
+
+<script language="javascript">
+function OpenHelp(){
+	var win2 = window.open('RosterHelp.jsp','_blank','toolbar=no,menubar=no,status=yes,resizable=yes,scrollbars=yes,width=680,height=600');
+    win2.focus();
+}
+</script>
+
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+
+<!-- In the BODY tag you can alter the BGCOLOR  and the BACKGROUND parameters and you can add more preload images for rollovers if needed -->
+
+<body leftmargin="0" topmargin="0" alink="#CC0033" bgcolor="#FFFFFF" text="#000033" vlink="#006699" link="#003399" marginheight="0" marginwidth="0">
+
+<!-- NAVIGATION START -->
+<script src="Patent%20Attorney_Agent%20Search_files/scriptmaster.js" language="JavaScript" type="text/JavaScript">
+</script>
+<noscript>
+Javascript required to view site-wide navigation bar. >> <a href="http://www.uspto.gov/sitenav.htm">View Alternative Site Navigation</a>
+</noscript>
+<!-- NAVIGATION END -->
+<!-- begin pageinfo -->
+<table border="0" width="100%">
+	<tbody><tr>
+		<td class="vertbarsmall">	     
+			<a href="http://www.uspto.gov/web/offices/dcom/gcounsel/index.htm">Boards 
+            &amp; Counsel</a> &gt; <a href="http://www.uspto.gov/web/offices/dcom/gcounsel/oed.htm">OED</a> &gt;          
+	      <span class="caption">Patent Attorney/Agent Search </span><br> 
+		</td> 
+	</tr>
+	<tr>
+	    <td class="vertbarsmall" bgcolor="#f0e0aa" height="5"></td>
+	</tr>
+	<tr>
+		<td>	
+			&nbsp;&nbsp;
+		</td>
+	</tr>
+</tbody></table>
+<table border="1" bordercolor="#dce1eb" cellpadding="5" cellspacing="0" align="center" width="98%" height="58">
+    <tbody> 
+    <tr> 
+      <td class="darkbgsmall" colspan="2" bgcolor="#003366"><strong>Patent Attorneys/Agents Search...</strong></td>
+    </tr>
+    <tr> 
+      <td colspan="2" align="left" bgcolor="#ffffff" valign="top" height="31">
+      	The listings contain contact information for attorneys and agents
+ with licenses to practice before the US Patent 
+        and Trademark Office. &nbsp;Currently, there are 10770 active 
+agents and 31876 active attorneys.
+            &nbsp;All searches reflect current information. 
+&nbsp;Information concerning a practitioner's status as an attorney is 
+based on records provided to the Office of Enrollment and Discipline and
+ might not reflect the practitioner's status in a State Bar.  
+Individuals interested in a practitioner's status in a State Bar should 
+contact that State Bar for specific information.
+			<!-- <br>
+          	 &nbsp; &nbsp;<a href="/OEDCI/GeoRegion.jsp"><img src="http://www.uspto.gov/images/20ebiz.gif" width="20" height="12" border="0" align="absmiddle" alt="Attorney Geographic Listing, e-Biz"></a> &nbsp;
+	        <a href="/OEDCI/GeoRegion.jsp"> Listing of Active Patent Attorneys and Agents by Geographic Region </a> -->
+	        <br>
+			 &nbsp; &nbsp;<a href="https://oedci.uspto.gov/OEDCI/index.jsp"><img src="Patent%20Attorney_Agent%20Search_files/20ebiz.gif" alt="Attorney Roster ZIP File e-Biz" border="0" align="absmiddle" width="20" height="12"></a> &nbsp;
+  		    <a href="https://oedci.uspto.gov/OEDCI/index.jsp">Entire Roster of Active Patent Attorneys and Agents (ZIP File)</a>
+		</td>
+	</tr>     
+    <tr>
+		<td colspan="2">
+          	<table>   
+              		  		
+		      <tbody><tr>
+		  	    <td>
+	  			  <a href="https://oedci.uspto.gov/OEDCI/SignIn.jsp"><img src="Patent%20Attorney_Agent%20Search_files/oedcibutton.jpg" alt="Registered Practitioner Sign In" border="0" align="absmiddle" width="250" height="40"></a>
+			    </td>
+			  </tr>
+		    </tbody></table>
+		</td>
+	</tr>
+	<tr>	
+		<td>
+	    	<table>
+	      		        
+        		
+			</table>
+      </td>
+	</tr>
+		
+</tbody></table>        
+
+<!-- populate the states list -->
+
+<form name="queryForm" method="POST" action="/OEDCI/query.do">
+<table border="0" width="100%">
+	<tbody>
+		<tr align="right">
+			<th width="174" height="35"><label for="last Name"><span class="chad"><b>Last Name</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="lastName" maxlength="50" size="25" id="last Name" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="lastNameWildCard" value="false" checked="checked" id="exact match for last name" type="radio"><label for="exact match for last name">Exact match</label>
+			    <br>
+			    <input name="lastNameWildCard" value="true" id="starts with for last name" type="radio"><label for="starts with for last name">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="first Name"><span class="chad"><b>First Name</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="firstName" maxlength="50" size="25" id="first Name" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="firstNameWildCard" value="false" id="exact match for first name" type="radio"><label for="exact match for first name">Exact match</label>
+			    <br>
+			    <input name="firstNameWildCard" value="true" checked="checked" id="starts with for first name" type="radio"><label for="starts with for first name">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="middle Name"><span class="chad"><b>Middle Name</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="middleName" maxlength="50" size="25" id="middle Name" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="middleNameWildCard" value="false" id="exact match for middle name" type="radio"><label for="exact match for middle name">Exact match</label>
+			    <br>
+			    <input name="middleNameWildCard" value="true" checked="checked" id="starts with for middle name" type="radio"><label for="starts with for middle name">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="businessName"><span class="chad"><b>Business/Firm Name</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="businessName" maxlength="50" size="25" id="businessName" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="businessNameWildCard" value="false" id="exact business name wildCard" type="radio"><label for="exact business name wildCard">Exact match</label>
+			    <br>
+			    <input name="businessNameWildCard" value="true" checked="checked" id="starts with business name wildCard" type="radio"><label for="starts with business name wildCard">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="city"><span class="chad"><b>City</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="city" maxlength="50" size="25" id="city" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="cityWildCard" value="false" checked="checked" id="exact match for city" type="radio"><label for="exact match for city">Exact match</label>
+			    <br>
+			    <input name="cityWildCard" value="true" id="starts with for city" type="radio"><label for="starts with for city">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="state/province"><span class="chad"><b>State/Province</b></span></label></th>
+			<td colspan="2" align="left" width="179" height="35">
+      			<select name="state" id="state/province"><option selected="selected" value="">Select State/Province</option>
+					<option value="AL">ALABAMA</option>
+<option value="AK">ALASKA</option>
+<option value="AZ">ARIZONA</option>
+<option value="AR">ARKANSAS</option>
+<option value="CA">CALIFORNIA</option>
+<option value="CO">COLORADO</option>
+<option value="CT">CONNECTICUT</option>
+<option value="DE">DELAWARE</option>
+<option value="DC">DISTRICT OF COLUMBIA</option>
+<option value="FL">FLORIDA</option>
+<option value="GA">GEORGIA</option>
+<option value="HI">HAWAII</option>
+<option value="ID">IDAHO</option>
+<option value="IL">ILLINOIS</option>
+<option value="IN">INDIANA</option>
+<option value="IA">IOWA</option>
+<option value="KS">KANSAS</option>
+<option value="KY">KENTUCKY</option>
+<option value="LA">LOUISIANA</option>
+<option value="ME">MAINE</option>
+<option value="MD">MARYLAND</option>
+<option value="MA">MASSACHUSETTS</option>
+<option value="MI">MICHIGAN</option>
+<option value="MN">MINNESOTA</option>
+<option value="MS">MISSISSIPPI</option>
+<option value="MO">MISSOURI</option>
+<option value="MT">MONTANA</option>
+<option value="NE">NEBRASKA</option>
+<option value="NV">NEVADA</option>
+<option value="NH">NEW HAMPSHIRE</option>
+<option value="NJ">NEW JERSEY</option>
+<option value="NM">NEW MEXICO</option>
+<option value="NY">NEW YORK</option>
+<option value="NC">NORTH CAROLINA</option>
+<option value="ND">NORTH DAKOTA</option>
+<option value="OH">OHIO</option>
+<option value="OK">OKLAHOMA</option>
+<option value="OR">OREGON</option>
+<option value="PA">PENNSYLVANIA</option>
+<option value="RI">RHODE ISLAND</option>
+<option value="SC">SOUTH CAROLINA</option>
+<option value="SD">SOUTH DAKOTA</option>
+<option value="TN">TENNESSEE</option>
+<option value="TX">TEXAS</option>
+<option value="UT">UTAH</option>
+<option value="VT">VERMONT</option>
+<option value="VA">VIRGINIA </option>
+<option value="WA">WASHINGTON</option>
+<option value="WV">WEST VIRGINIA</option>
+<option value="WI">WISCONSIN</option>
+<option value="WY">WYOMING</option>
+<option value="">----- ----- ----- ----- ----- -----</option>
+<option value="AB">ALBERTA</option>
+<option value="BC">BRITISH COLUMBIA</option>
+<option value="MB">MANITOBA</option>
+<option value="NB">NEW BRUNSWICK</option>
+<option value="NL">NEWFOUNDLAND AND LABRADOR</option>
+<option value="NT">NORTHWEST TERRITORIES</option>
+<option value="NS">NOVA SCOTIA</option>
+<option value="NU">NUNAVUT</option>
+<option value="ON">ONTARIO</option>
+<option value="PE">PRINCE EDWARD ISLAND</option>
+<option value="QC">QUEBEC</option>
+<option value="SK">SASKATCHEWAN</option>
+<option value="YT">YUKON TERRITORY</option>
+<option value="">----- ----- ----- ----- ----- -----</option>
+<option value="AS">AMERICAN SAMOA</option>
+<option value="81">BAKER ISLAND</option>
+<option value="GU">GUAM</option>
+<option value="84">HOWLAND ISLAND</option>
+<option value="86">JARVIS ISLAND</option>
+<option value="67">JOHNSTON ATOLL</option>
+<option value="89">KINGMAN REEF</option>
+<option value="71">MIDWAY ISLANDS</option>
+<option value="76">NAVASSA ISLAND</option>
+<option value="MP">NORTHERN MARIANA ISLANDS</option>
+<option value="95">PALMYRA ATOLL</option>
+<option value="PR">PUERTO RICO</option>
+<option value="VI">VIRGIN ISLANDS</option>
+<option value="79">WAKE ISLAND</option>
+<option value="AA">Armed Forces Americas excluding Canada</option>
+<option value="AE">Armed Forces Europe, Middle East, Africa, Canada</option>
+<option value="AP">Armed Forces Pacific</option>
+<option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option></select>
+ 			</td>
+		</tr>
+		<tr align="right">
+			<th width="174" height="35"><label for="zip code"><span class="chad"><b>Postal Code</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="zipcode" maxlength="50" size="25" id="zip code" type="text">			
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+			    <input name="zipcodeWildCard" value="false" id="exact match for postal code" type="radio"><label for="exact match for postal code">Exact match</label>
+			    <br>
+			    <input name="zipcodeWildCard" value="true" checked="checked" id="starts with for postal code" type="radio"><label for="starts with for postal code">Starts with</label>
+			</td>
+		</tr>
+		<tr align="right">
+			<th align="right" width="174" height="35"><label for="country"><span class="chad"><b>Country</b></span></label></th>
+			<td colspan="2" align="left" width="179" height="35">
+       			<select name="country" id="country"><option selected="selected" value="">Select Country</option> 
+					<option value="AF">AFGHANISTAN</option>
+<option value="AL">ALBANIA</option>
+<option value="DZ">ALGERIA</option>
+<option value="AD">ANDORRA</option>
+<option value="AO">ANGOLA</option>
+<option value="AI">ANGUILLA</option>
+<option value="AQ">ANTARCTICA</option>
+<option value="AG">ANTIGUA AND BARBUDA</option>
+<option value="AR">ARGENTINA</option>
+<option value="AM">ARMENIA</option>
+<option value="AW">ARUBA</option>
+<option value="AU">AUSTRALIA</option>
+<option value="AT">AUSTRIA</option>
+<option value="AZ">AZERBAIJAN</option>
+<option value="BS">BAHAMAS</option>
+<option value="BH">BAHRAIN</option>
+<option value="BD">BANGLADESH</option>
+<option value="BB">BARBADOS</option>
+<option value="BY">BELARUS</option>
+<option value="BE">BELGIUM</option>
+<option value="BZ">BELIZE</option>
+<option value="BJ">BENIN</option>
+<option value="BM">BERMUDA</option>
+<option value="BT">BHUTAN</option>
+<option value="BO">BOLIVIA</option>
+<option value="BA">BOSNIA AND HERZEGOVINA</option>
+<option value="BW">BOTSWANA</option>
+<option value="BV">BOUVET ISLAND</option>
+<option value="BR">BRAZIL</option>
+<option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="BN">BRUNEI DARUSSALAM</option>
+<option value="BG">BULGARIA</option>
+<option value="BF">BURKINA FASO</option>
+<option value="BI">BURUNDI</option>
+<option value="KH">CAMBODIA</option>
+<option value="CM">CAMEROON</option>
+<option value="CA">CANADA</option>
+<option value="CV">CAPE VERDE</option>
+<option value="KY">CAYMAN ISLANDS</option>
+<option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+<option value="TD">CHAD</option>
+<option value="CL">CHILE</option>
+<option value="CN">CHINA</option>
+<option value="CX">CHRISTMAS ISLAND</option>
+<option value="CC">COCOS (KEELING) ISLANDS</option>
+<option value="CO">COLOMBIA</option>
+<option value="KM">COMOROS</option>
+<option value="CG">CONGO</option>
+<option value="CD">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="CK">COOK ISLANDS</option>
+<option value="CR">COSTA RICA</option>
+<option value="CI">COTE D'IVOIRE</option>
+<option value="HR">CROATIA</option>
+<option value="CU">CUBA</option>
+<option value="CY">CYPRUS</option>
+<option value="CZ">CZECH REPUBLIC</option>
+<option value="DK">DENMARK</option>
+<option value="DJ">DJIBOUTI</option>
+<option value="DM">DOMINICA</option>
+<option value="DO">DOMINICAN REPUBLIC</option>
+<option value="EC">ECUADOR</option>
+<option value="EG">EGYPT</option>
+<option value="SV">EL SALVADOR</option>
+<option value="GQ">EQUATORIAL GUINEA</option>
+<option value="ER">ERITREA</option>
+<option value="EE">ESTONIA</option>
+<option value="ET">ETHIOPIA</option>
+<option value="FK">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="FO">FAROE ISLANDS</option>
+<option value="FJ">FIJI</option>
+<option value="FI">FINLAND</option>
+<option value="FR">FRANCE</option>
+<option value="GF">FRENCH GUIANA</option>
+<option value="PF">FRENCH POLYNESIA</option>
+<option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+<option value="GA">GABON</option>
+<option value="GM">GAMBIA</option>
+<option value="GE">GEORGIA</option>
+<option value="DE">GERMANY</option>
+<option value="GH">GHANA</option>
+<option value="GI">GIBRALTAR</option>
+<option value="GR">GREECE</option>
+<option value="GL">GREENLAND</option>
+<option value="GD">GRENADA</option>
+<option value="GP">GUADELOUPE</option>
+<option value="GT">GUATEMALA</option>
+<option value="GN">GUINEA</option>
+<option value="GW">GUINEA-BISSAU</option>
+<option value="GY">GUYANA</option>
+<option value="HT">HAITI</option>
+<option value="HM">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="VA">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="HN">HONDURAS</option>
+<option value="HK">HONG KONG</option>
+<option value="HU">HUNGARY</option>
+<option value="IS">ICELAND</option>
+<option value="IN">INDIA</option>
+<option value="ID">INDONESIA</option>
+<option value="IR">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="IQ">IRAQ</option>
+<option value="IE">IRELAND</option>
+<option value="IL">ISRAEL</option>
+<option value="IT">ITALY</option>
+<option value="JM">JAMAICA</option>
+<option value="JP">JAPAN</option>
+<option value="JO">JORDAN</option>
+<option value="KZ">KAZAKSTAN</option>
+<option value="KE">KENYA</option>
+<option value="KI">KIRIBATI</option>
+<option value="KP">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+<option value="KR">KOREA, REPUBLIC OF</option>
+<option value="KW">KUWAIT</option>
+<option value="KG">KYRGYZSTAN</option>
+<option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+<option value="LV">LATVIA</option>
+<option value="LB">LEBANON</option>
+<option value="LS">LESOTHO</option>
+<option value="LR">LIBERIA</option>
+<option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="LI">LIECHTENSTEIN</option>
+<option value="LT">LITHUANIA</option>
+<option value="LU">LUXEMBOURG</option>
+<option value="MO">MACAO</option>
+<option value="MK">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+<option value="MG">MADAGASCAR</option>
+<option value="MW">MALAWI</option>
+<option value="MY">MALAYSIA</option>
+<option value="MV">MALDIVES</option>
+<option value="ML">MALI</option>
+<option value="MT">MALTA</option>
+<option value="MH">MARSHALL ISLANDS</option>
+<option value="MQ">MARTINIQUE</option>
+<option value="MR">MAURITANIA</option>
+<option value="MU">MAURITIUS</option>
+<option value="YT">MAYOTTE</option>
+<option value="MX">MEXICO</option>
+<option value="FM">MIRCRONESIA, FEDERATED STATES OF</option>
+<option value="MD">MOLDOVA, REPUBLIC OF</option>
+<option value="MC">MONACO</option>
+<option value="MN">MONGOLIA</option>
+<option value="MS">MONTSERRAT</option>
+<option value="MA">MOROCCO</option>
+<option value="MZ">MOZAMBIQUE</option>
+<option value="MM">MYANMAR</option>
+<option value="NA">NAMIBIA</option>
+<option value="NR">NAURU</option>
+<option value="NP">NEPAL</option>
+<option value="NL">NETHERLANDS</option>
+<option value="AN">NETHERLANDS ANTILLES</option>
+<option value="NC">NEW CALEDONIA</option>
+<option value="NZ">NEW ZEALAND</option>
+<option value="NI">NICARAGUA</option>
+<option value="NE">NIGER</option>
+<option value="NG">NIGERIA</option>
+<option value="NU">NIUE</option>
+<option value="NF">NORFOLK ISLAND</option>
+<option value="NO">NORWAY</option>
+<option value="OM">OMAN</option>
+<option value="PK">PAKISTAN</option>
+<option value="PW">PALAU</option>
+<option value="PA">PANAMA</option>
+<option value="PG">PAPUA NEW GUINEA</option>
+<option value="QP">PARACEL ISLANDS</option>
+<option value="PY">PARAGUAY</option>
+<option value="PE">PERU</option>
+<option value="PH">PHILIPPINES</option>
+<option value="PN">PITCAIRN</option>
+<option value="PL">POLAND</option>
+<option value="PT">PORTUGAL</option>
+<option value="QA">QATAR</option>
+<option value="RE">REUNION</option>
+<option value="RO">ROMANIA</option>
+<option value="RU">RUSSIAN FEDERATION</option>
+<option value="RW">RWANDA</option>
+<option value="SH">SAINT HELENA</option>
+<option value="KN">SAINT KITTS AND NEVIS</option>
+<option value="LC">SAINT LUCIA</option>
+<option value="PM">SAINT PIERRE AND MIQUELON</option>
+<option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+<option value="WS">SAMOA</option>
+<option value="SM">SAN MARINO</option>
+<option value="ST">SAO TOME AND PRINCIPE</option>
+<option value="SA">SAUDI ARABIA</option>
+<option value="SN">SENEGAL</option>
+<option value="SC">SEYCHELLES</option>
+<option value="SL">SIERRA LEONE</option>
+<option value="SG">SINGAPORE</option>
+<option value="SK">SLOVAKIA</option>
+<option value="SI">SLOVENIA</option>
+<option value="SB">SOLOMON ISLANDS</option>
+<option value="SO">SOMALIA</option>
+<option value="ZA">SOUTH AFRICA</option>
+<option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="ES">SPAIN</option>
+<option value="LK">SRI LANKA</option>
+<option value="ZZ">STATELESS</option>
+<option value="SD">SUDAN</option>
+<option value="SR">SURINAME</option>
+<option value="SJ">SVALBARD AND JAN MAYEN</option>
+<option value="SZ">SWAZILAND</option>
+<option value="SE">SWEDEN</option>
+<option value="CH">SWITZERLAND</option>
+<option value="SY">SYRIAN ARAB REPUBLIC</option>
+<option value="TW">TAIWAN</option>
+<option value="TJ">TAJIKISTAN</option>
+<option value="TZ">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="TH">THAILAND</option>
+<option value="TL">TIMOR-LESTE</option>
+<option value="TG">TOGO</option>
+<option value="TK">TOKELAU</option>
+<option value="TO">TONGA</option>
+<option value="TT">TRINIDAD AND TOBAGO</option>
+<option value="TN">TUNISIA</option>
+<option value="TR">TURKEY</option>
+<option value="TM">TURKMENISTAN</option>
+<option value="TC">TURKS AND CAICOS ISLANDS</option>
+<option value="TV">TUVALU</option>
+<option value="UG">UGANDA</option>
+<option value="UA">UKRAINE</option>
+<option value="AE">UNITED ARAB EMIRATES</option>
+<option value="GB">UNITED KINGDOM</option>
+<option value="UY">URUGUAY</option>
+<option value="US">US</option>
+<option value="UZ">UZBEKISTAN</option>
+<option value="VU">VANUATU</option>
+<option value="VE">VENEZUELA</option>
+<option value="VN">VIET NAM</option>
+<option value="VG">VIRGIN ISLANDS, BRITISH</option>
+<option value="WF">WALLIS AND FUTUNA</option>
+<option value="PS">WEST BANK/GAZA</option>
+<option value="EH">WESTERN SAHARA</option>
+<option value="YE">YEMEN</option>
+<option value="YU">YUGOSLAVIA</option>
+<option value="ZM">ZAMBIA</option>
+<option value="ZW">ZIMBABWE</option>
+<option value="XP">NOT PROVIDED</option></select>
+			</td>
+		</tr>
+		<tr align="right">
+			<th align="right" width="174" height="35"><label for="registration number"><span class="chad"><b>Registration Number</b></span></label></th>
+			<td align="left" width="179" height="35">
+      			<input name="registrationNumber" maxlength="6" size="25" id="registration number" type="text"> 
+			</td>
+			<td align="left" valign="middle" width="498" height="20">
+				<font color="navy">(Example: 12345)</font>
+			</td>
+		</tr>
+		<tr>
+			<th align="right" width="174" height="35"></th>
+			<td align="center" width="179" height="35" nowrap="nowrap">
+      			<input name="submit" value="Search" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;
+      			<input name="reset" value="Reset" type="reset">	
+			</td>
+			<td align="left" valign="middle" width="498" height="35"></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+<script language="JavaScript" type="text/javascript">
+  <!--
+    document.forms["queryForm"].elements["lastName"].focus()
+  // -->
+</script>
+
+<!--<table border=0>
+	<tr>
+		<td>
+			<h2>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<a href="mailto:OEDXXX@uspto.gov?subject=Web%20Roster">For feedback on the Registered Attorneys and Agents Search please e-mail us at OEDXXX@uspto.gov</a></h2>
+		</td>
+	</tr>
+</table>-->
+<br>
+<hr>
+<p>
+
+<span class="chad"><b>&nbsp; &nbsp; Search Tips:</b></span>
+</p><ul>
+	<li><a href="#search1">Search for Patent Attorneys and Agents by Last Name</a></li>
+	<li><a href="#search2">Search for Patent Attorneys and Agents by Business/Firm Name</a></li>
+	<li><a href="#search3">Search for Patent Attorneys and Agents in a City</a></li>
+	<li><a href="#search4">Search for Patent Attorneys and Agents in a State or Province</a></li>
+	<li><a href="#search5">Other Search Tips</a></li>		
+</ul>
+<p></p>
+<br>
+
+<p>
+<span class="chad"><b>&nbsp; &nbsp; <a name="search1"></a>To Search for Patent Attorneys and Agents by Last Name:</b></span>
+</p><ul>
+	<li>Enter a last name in the <b>Last Name</b> entry field. <br><i>(Note that the <b>Exact match</b> radio button is checked by default. Therefore you must spell the last name of the patent attorney or agent correctly.)</i></li>
+	<li>Click the <b>Search</b> button.</li>
+</ul>
+<br>
+<span class="chad"><b>&nbsp; &nbsp; <a name="search2"></a>To Search for Patent Attorneys and Agents by Business/Firm Name:</b></span>
+<ul>
+	<li>Enter the name of the business or firm name in the <b>Business/Firm Name</b> entry field. <br><i>(Note that the <b>Starts with</b> radio button is checked by default.)</i></li>
+	<li>Click the <b>Search</b> button.</li>
+</ul>
+<br>
+<span class="chad"><b>&nbsp; &nbsp; <a name="search3"></a>To Search for Patent Attorneys and Agents in a City:</b></span>
+<ul>
+	<li>Enter the name of the city in the <b>City</b> entry field. <br><i>(Note that the <b>Exact match</b> radio button is checked by default. Therefore you must spell the city correctly.)</i></li>
+	<li>Click the <b>Search</b> button.</li>
+</ul>
+<br>
+<span class="chad"><b>&nbsp; &nbsp; <a name="search4"></a>To Search for Patent Attorneys and Agents in a State or Province:</b></span>
+<ul>
+	<li>Select the name of the state or province in the <b>State/Province</b> drop down box.</li>
+	<li>Click the <b>Search</b> button.</li>
+</ul>
+<br>
+<span class="chad"><b>&nbsp; &nbsp; <a name="search5"></a>Other Search Tips:</b></span>
+<ul>
+	<li>Use the radio buttons to the right of entry fields and drop down boxes to expand or reduce the number of results in your search.</li>
+	<li>If you can search by <b>Registration Number</b>, you will get the fastest results.</li>
+	<li>If your search results in multiple pages of data, use the <b>View All</b> link at the bottom right of the search results page to view all the search results at once.</li>
+	<li>Do not use a period when using a practitioner's initials in the search criteria.</li>
+</ul>
+<p></p>
+
+<script language="javascript">
+if (document.queryForm.state.value==""){
+	document.queryForm.state.selectedIndex=0;
+}
+</script>
+
+<!-- end pageinfo -->
+
+<!-- FOOTER START -->
+     
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr bgcolor="#ffffff">
+<td align="right" bgcolor="#F0F0F0" height="16">
+<div align="center">
+<hr>
+<span class="vertbarsmall">|<a href="#skipnav2" class="darkbg">.</a><a href="http://www.uspto.gov/">HOME</a> |
+<a href="http://www.uspto.gov/web/navaids/siteindx.htm">INDEX</a> | <a href="http://www.uspto.gov/web/menu/search.html">SEARCH</a> 
+| <a href="http://www.uspto.gov/ebc/indexebc.html"><em>e</em>BUSINESS</a>
+| <a href="http://www.uspto.gov/web/menu/feedback.html">CONTACT US</a> | 
+<a href="http://www.uspto.gov/privact.jsp">PRIVACY POLICY</a>&nbsp;</span><a name="skipnav2"></a>
+</div>
+<p class="tinytext" align="right">Last Modified: 07/14/2014 EST<noscript class="tinytext"></noscript></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- FOOTER END -->
+
+
+
+</body><!--content uspto.cio.sdms.oedis.jw --></html>
